@@ -1,11 +1,9 @@
 import "Counter"
 
 transaction {
-
     prepare(acct: &Account) {
         // Authorizes the transaction
     }
-
     execute {
         // Increment the counter
         Counter.increment()
